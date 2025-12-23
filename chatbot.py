@@ -17,6 +17,7 @@ st.markdown("""
     font-family: 'Poppins', sans-serif;
      }
 
+/* Dynamic Deep Ethnic Background - Optimized for White Text visibility */
 .stApp {
     background: linear-gradient(-45deg, gray, green);
     background-size: 400% 400%;
@@ -30,6 +31,7 @@ st.markdown("""
 }
 
 .main .block-container {
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(15px);
     border-radius: 25px;
     padding: 2.5rem;
@@ -56,14 +58,13 @@ h1 {
     margin: 0;
 }
 
-/* Sidebar Styling */
 .stSidebar {
     background: linear-gradient(180deg, #1e1b4b 0%, #4338ca 100%);
 }
 
 .stSidebar label {
     color: #ffffff !important;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .stChatMessage[data-testid="chat-message-user"] {
@@ -566,8 +567,4 @@ if prompt := st.chat_input(ui["placeholder"]):
                     </div>
                     """, unsafe_allow_html=True)
     
-
     st.session_state.messages.append({"role": "assistant", "content": response_text, "sources": sources})
-
-
-

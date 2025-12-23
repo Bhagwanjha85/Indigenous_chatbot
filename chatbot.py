@@ -468,7 +468,7 @@ for message in st.session_state.messages:
                 </div>
                 """, unsafe_allow_html=True)
 
-# Image Upload wala Section
+# Image Upload Section
 col1, col2 = st.columns([6, 1])
 
 with col2:
@@ -568,6 +568,4 @@ if prompt := st.chat_input(ui["placeholder"]):
                     </div>
                     """, unsafe_allow_html=True)
     
-
     st.session_state.messages.append({"role": "assistant", "content": response_text, "sources": sources})
-

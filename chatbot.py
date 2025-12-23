@@ -35,7 +35,6 @@ st.markdown("""
     backdrop-filter: blur(15px);
     border-radius: 25px;
     padding: 2.5rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -567,6 +566,7 @@ if prompt := st.chat_input(ui["placeholder"]):
                     """, unsafe_allow_html=True)
     
     st.session_state.messages.append({"role": "assistant", "content": response_text, "sources": sources})
+
 
 
 

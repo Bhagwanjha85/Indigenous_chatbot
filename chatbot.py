@@ -15,7 +15,6 @@ st.markdown("""
 
 * { 
     font-family: 'Poppins', sans-serif;
-    background:red;
      }
 
 .stApp {
@@ -570,4 +569,5 @@ if prompt := st.chat_input(ui["placeholder"]):
     
 
     st.session_state.messages.append({"role": "assistant", "content": response_text, "sources": sources})
+
 

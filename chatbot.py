@@ -19,7 +19,7 @@ st.markdown("""
 
 /* Dynamic Deep Ethnic Background - Optimized for White Text visibility */
 .stApp {
-    background: linear-gradient(-45deg, gray, white);
+    background: linear-gradient(-45deg, whitesmoke, white);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -41,7 +41,7 @@ st.markdown("""
 
 /* Header Section */
 .main-header {
-    background: linear-gradient(135deg, gray  0%, green  100%);
+    background: linear-gradient(135deg, gray  0%, white  100%);
     color:black;
     text-weight:900;
     margin: -1rem -1rem 2rem -1rem;
@@ -568,4 +568,5 @@ if prompt := st.chat_input(ui["placeholder"]):
                     """, unsafe_allow_html=True)
     
     st.session_state.messages.append({"role": "assistant", "content": response_text, "sources": sources})
+
 

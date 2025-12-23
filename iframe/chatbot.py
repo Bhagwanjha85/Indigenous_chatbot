@@ -1,11 +1,10 @@
 import streamlit as st
-import google.genai as genai
+import google.generativeai as genai
 import requests
 import os
 import time
 from PIL import Image
 import io
-
 
 st.set_page_config(page_title="Indigenous Language chatbot", layout="wide")
 
@@ -568,4 +567,5 @@ if prompt := st.chat_input(ui["placeholder"]):
                     </div>
                     """, unsafe_allow_html=True)
     
+
     st.session_state.messages.append({"role": "assistant", "content": response_text, "sources": sources})

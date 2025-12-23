@@ -15,6 +15,7 @@ st.markdown("""
 
 * { 
     font-family: 'Poppins', sans-serif;
+    background:red;
      }
 
 .stApp {
@@ -30,7 +31,7 @@ st.markdown("""
 }
 
 .main .block-container {
-    background: rgba(0, 0, 0, 0.4);
+    background: red;
     backdrop-filter: blur(15px);
     border-radius: 25px;
     padding: 2.5rem;
@@ -63,7 +64,7 @@ h1 {
 }
 
 .stSidebar label {
-    color: red !important;
+    color: #ffffff !important;
     font-weight: 900;
 }
 
@@ -569,3 +570,4 @@ if prompt := st.chat_input(ui["placeholder"]):
     
 
     st.session_state.messages.append({"role": "assistant", "content": response_text, "sources": sources})
+

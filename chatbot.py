@@ -30,7 +30,6 @@ st.markdown("""
 }
 
 .main .block-container {
-    background: red;
     backdrop-filter: blur(15px);
     border-radius: 25px;
     padding: 2.5rem;
@@ -569,5 +568,6 @@ if prompt := st.chat_input(ui["placeholder"]):
     
 
     st.session_state.messages.append({"role": "assistant", "content": response_text, "sources": sources})
+
 
 
